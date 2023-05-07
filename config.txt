@@ -1,0 +1,11 @@
+#npc ID
+personID: 1306
+#npc name
+name: leeon
+#npc atk
+atk: 10086
+#npc def
+def: 99999
+
+#npc info
+info: The npc is NO.1
