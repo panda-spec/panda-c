@@ -67,7 +67,7 @@ void parseFile(const char *filepath, int lines, struct Npc **configInfo)
         }
         memset(buf, 0, 1024);
     }
-
+    fclose(file);
     // 建立关系
     *configInfo = config;
 }
