@@ -43,7 +43,7 @@ void parseFile(const char *filepath, int lines, struct Npc **configInfo)
     {
         return;
     }
-    FILE *file = open(filepath, "r");
+    FILE *file = fopen(filepath, "r");
     if ( file == NULL )
     {
         perror("open");
@@ -86,3 +86,12 @@ char *getValue(char *key, struct Npc *config, int lines)
 }
 
 // 释放内存
+void freeSpace(struct Npc *config)
+{
+    if ( config == NULL )
+    {
+        return;
+    }
+    free(config);
+    config = NULL;
+}

@@ -22,4 +22,7 @@ void parseFile(const char *filepath, int lines, struct Npc **config);
 // 通过key获取value
 char *getValue(char *key, struct Npc *config, int lines);
 
+// 释放内存
+void freeSpace(struct Npc *config);
+
 
